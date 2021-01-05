@@ -1,0 +1,247 @@
+/* Remove default bullets */
+con body {
+  background-color: white;
+}
+ul, #myULi {
+  list-style-type: none;
+}
+li, #myULi {
+  list-style-type: none;
+}
+#myULi li:nth-child(even){background-color: whitesmoke;}
+
+/* Remove margins and padding from the parent ul */
+#panel {
+  background-color: none;
+}
+
+#myULi {
+  /*background-color: #bfe6ff;*/
+  margin: 0;
+  padding: 0;
+}
+
+/*Styling the table*/
+#myTablei {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+}
+#myTablei td, #myTablei th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+/*#myTablei tr:nth-child(even){background-color: #f2f2f2;}*/
+
+/*#myTablei tr:hover {background-color: #ddd;}*/
+#myTablei th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4267B3;
+  color: white;
+}
+
+/* Style the caret/arrow 
+.caret {
+  cursor: pointer;
+  user-select: none; 
+}
+
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+
+.nested {
+   display: block ;
+}
+
+
+  display: block;
+} 
+*/
+/* This is for overflow div element to accomodate the tree view */
+#myDiv {
+	background-color: #FFFFFF;
+	max-width: 500px; 
+	/* height: 720px; */
+	max-height: 720px;
+	border-style: solid;
+	border-width: thick;
+	border-color: #D3D3D3;
+	/* resize: horizontal; */
+	overflow: scroll;
+	scrollbar-width: none;
+	/* -ms-overflow-style: none; */
+	float: left;
+	width: 500px;
+}
+::-moz-selection { /* Code for Firefox */
+  background: #9867C5;
+}
+
+::selection {
+  background: #9867C5;
+}
+
+/* To accomodate the changes made to the product_search table. */
+#myDiv2 {
+	/* float:right; */
+	width:auto;
+	max-width: 1400px;  
+	max-height:720px;  
+	min-width:0px; 
+	margin-left:auto;
+	margin-right:0px;
+	top:0px;
+	overflow:auto;
+	/* resize: horizontal; */
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	background-color: #FFFFFF;
+}
+/*The styling of the search bar for products or items*/
+#myInputi {
+	float:right;
+}
+#myInput {
+	color:white;
+	background-color:#4267B3;
+}
+
+.drag.even.selected{
+	cursor: default;
+}
+
+.drag.odd.selected{
+	cursor: default;
+}
+.droppable.selected {
+  background-color: #DEF;
+}
+.module {
+	cursor: url('/product_shelf/static/src/img/cursor.png'), auto;
+}
+
+.highlight {
+	background-color: green;
+}
+
+.custom-menu {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  white-space: nowrap;
+  font-family: sans-serif;
+  background: #FFF;
+  color: #333;
+  border-radius: 5px;
+  padding: 0;
+}
+
+/* Each of the items in the list */
+.custom-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+    transition: all .3s ease;
+    user-select: none;
+}
+
+.custom-menu li:hover {
+    background-color: #DEF;
+}
+
+ /* For custom-menu2*/
+ .custom-menu-drop {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  white-space: nowrap;
+  font-family: sans-serif;
+  background: #FFF;
+  color: #333;
+  border-radius: 5px;
+  padding: 0;
+}
+
+/* Each of the items in the list */
+.custom-menu-drop li {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+    transition: all .3s ease;
+    user-select: none;
+}
+
+.custom-menu-drop li:hover {
+    background-color: #DEF;
+}
+#up_1 {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery.choose {
+  border: 1px solid #777;
+  background-color: #4267B3;
+}
+
+.resizedTextbox {
+  width: 300px;
+}
+
+label {
+  font-weight: 500;
+}
+
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
