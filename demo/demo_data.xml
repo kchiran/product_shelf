@@ -1,0 +1,13 @@
+<odoo>
+	<data>
+		<record id="asus" model="product_shelf">
+			<field name="name">Asus Motherboards</field>
+		</record>
+		<record id="samsung" model="product_shelf">
+			<field name="name">Inkjet Printers</field>
+		</record>
+		<record id="philips" model="product_shelf">
+			<field name="name">LED Monitors</field>
+		</record>
+	</data>
+</odoo>

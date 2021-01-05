@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id= "product_shelf_views_tree" model = "ir.ui.view">
+			<field name = "name">product_shelf_view</field>
+			<field name = "model">product_shelf</field>
+			<field name = "arch" type = "xml">
+				<tree>
+					<field name = "name"/>
+					<field name = "address"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_list_pcm">
+			<field name="name">pcm</field>
+			<field name="res_model">product_shelf</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<record id="admin_menu" model="website.menu">
+			<field name="name">Admin</field> 
+			<field name="url">/pcm/products/9</field>
+			 <field name="parent_id" ref="website.main_menu"/>
+			 <field name="sequence" type="int">80</field> 
+		</record>
+
+		<record id="admin_menu5" model="website.menu">
+			<field name="name">Admin</field> 
+			<field name="url">/pcm/products/9</field>
+			 <field name="parent_id" ref="website.main_menu"/>
+			 <field name="sequence" type="int">90</field> 
+		</record>
+
+		<menuitem name="myShelf" id="my_main_root"/>
+		<menuitem name="Shelf" id="menu_pcm" parent="my_main_root" action ="action_list_pcm"/>
+	</data>
+
+</odoo>
